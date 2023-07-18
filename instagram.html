@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="instagram.css" />
+    <title>Instagram Clone</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="wrap">
+        <img
+          src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
+          alt="Instagram 로고"
+        />
+        <div class="search">
+          <input type="text" placeholder="검색" />
+          <button><i class="fas fa-search"></i></button>
+        </div>
+        <nav class="gnb">
+          <ul>
+            <!-- 클릭했을때 어느 홈페이지의 url을 작성 x 자바스크립트까지 안했기 때문 -->
+            <li class="research"><a href="#">탐색</a></li>
+            <li class="like"><a href="#">좋아요</a></li>
+            <li class="mypage"><a href="#">my profile</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container wrap">
+      <aside>
+        <!-- MY_PROFILE -->
+        <div class="my_profile">
+          <a href="#" class="profile_img">
+            <img
+              alt="User profile image"
+              class="round_img"
+              src="https://e7.pngegg.com/pngimages/627/693/png-clipart-computer-icons-user-user-icon-face-monochrome.png"
+              width="25"
+              height="auto"
+            />
+          </a>
+          <span class="my_id">
+            <a href="#n" class="txt_id">My ID</a>
+            <p>My Nickname</p>
+          </span>
+        </div>
+        <!-- WIDGET STORY -->
+        <article class="widget stories">
+          <div class="widget_ttl">
+            <span>스토리</span>
+            <a href="#n">모두 보기</a>
+          </div>
+
+          <section class="list story">
+            <div class="story">
+              <a href="#n" class="follower_img">
+                <img
+                  alt="follwer profile image"
+                  class="round_img"
+                  src="https://e7.pngegg.com/pngimages/627/693/png-clipart-computer-icons-user-user-icon-face-monochrome.png"
+                  width="25"
+                  height="auto"
+                />
+              </a>
+              <span class="user_id">
+                <a herf="#n" class="txt_id">Fallowing ID</a>
+                <p>3h ago</p>
+              </span>
+            </div>
+
+            <div class="story">
+              <a href="#n" class="follower_img">
+                <img
+                  alt="follwer profile image"
+                  class="round_img"
+                  src="https://e7.pngegg.com/pngimages/627/693/png-clipart-computer-icons-user-user-icon-face-monochrome.png"
+                  width="25"
+                  height="auto"
+                />
+              </a>
+              <span class="user_id">
+                <a herf="#n" class="txt_id">Fallowing ID</a>
+                <p>3h ago</p>
+              </span>
+            </div>
+
+            <div class="story">
+              <a href="#n" class="follower_img">
+                <img
+                  alt="follwer profile image"
+                  class="round_img"
+                  src="https://e7.pngegg.com/pngimages/627/693/png-clipart-computer-icons-user-user-icon-face-monochrome.png"
+                  width="25"
+                  height="auto"
+                />
+              </a>
+              <span class="user_id">
+                <a herf="#n" class="txt_id">Fallowing ID</a>
+                <p>3h ago</p>
+              </span>
+            </div>
+          </section>
+        </article>
+
+        <!-- WIDGET recommed -->
+        <article class="widget recommeds">
+          <div class="widget_ttl">
+            <span>회원님을 위한 추천</span>
+            <a href="#n">모두 보기</a>
+          </div>
+
+          <section class="list_recommend">
+            <div class="recommend">
+              <a href="#n" class="recommend_img">
+                <img
+                  alt="follower profile image"
+                  class="round_img"
+                  src="https://e7.pngegg.com/pngimages/627/693/png-clipart-computer-icons-user-user-icon-face-monochrome.png"
+                  width="25"
+                  height="auto"
+                />
+              </a>
+              <span class="user_id">
+                <a href="#n" class="txt_id">recommender ID</a>
+                <p>followor list</p>
+              </span>
+              <button type="button">팔로우</button>
+            </div>
+            <div class="recommend">
+              <a href="#n" class="recommend_img">
+                <img
+                  alt="follower profile image"
+                  class="round_img"
+                  src="https://e7.pngegg.com/pngimages/627/693/png-clipart-computer-icons-user-user-icon-face-monochrome.png"
+                  width="25"
+                  height="auto"
+                />
+              </a>
+              <span class="user_id">
+                <a href="#n" class="txt_id">recommender ID</a>
+                <p>follwor list</p>
+              </span>
+              <button type="button">팔로우</button>
+            </div>
+          </section>
+        </article>
+        <!-- WIDGET recommend -->
+
+        <!-- menu -->
+        <nav class="menu">
+          <ul>
+            <li><a href="#n">instagram 정보</a></li>
+            <li><a href="#n"></a>지원</li>
+            <li><a href="#n"></a>홍보센터</li>
+            <li><a href="#n"></a>API</li>
+            <li><a href="#n"></a>채용 정보</li>
+            <li><a href="#n"></a>개인정보처리방침</li>
+            <li><a href="#n"></a>약관</li>
+            <li><a href="#n"></a>디렉터리</li>
+            <li><a href="#n"></a>프로필</li>
+            <li><a href="#n"></a>해시태그</li>
+            <li><a href="#n"></a>언어</li>
+          </ul>
+        </nav>
+        <!-- css 중앙 정렬 추가 -->
+        <p class="copyright">©. 2023 INSTAGRAM</p>
+      </aside>
+
+      <!-- FEED BOARD -->
+      <div class="feed_board">
+        <!-- FEED COMPONENT 1 -->
+        <article class="feed">
+          <!-- top -->
+          <div class="new_poster">
+            <a href="#n" class="poster_img">
+              <img
+                alt="follower profile image"
+                class="round_img"
+                src="https://e7.pngegg.com/pngimages/627/693/png-clipart-computer-icons-user-user-icon-face-monochrome.png"
+                width="25"
+                height="auto"
+              />
+            </a>
+            <a>
+              <a href="#n" class="poster_id txt_id">Following ID</a>
+              <button><i class="fas fa-ellipsis-h"></i>옵션 더보기</button>
+            </a>
+          </div>
+          <!-- content -->
+          <section class="feed_imgs">
+            <img
+              alt="수달 사진"
+              src="https://i.namu.wiki/i/uyUxDjOI91nCApqHVj4kxq-qCMvvmp3u3iCGQTkvT2mx0IXEHhTR_0BhRZxbOs1kqDCOsYpXGSAPLm_MlCXLWg.webp"
+              width="500"
+              height="330"
+            />
+            <div class="interactions">
+              <div class="my_emotion">
+                <button type="button">like</button>
+                <button type="button">
+                  <i class="far fa-comment"></i>write_comment
+                </button>
+                <button type="button"><i class="send_DM"></i>send_DM</button>
+              </div>
+              <div class="pagnation"></div>
+              <button type="button" class="bookmark">
+                <i class="far fa-bookmark"></i>bookmark
+              </button>
+            </div>
+            <p>
+              <a href="#n" class="like_user">
+                <img
+                  alt="like user image"
+                  class="round_img"
+                  src="https://e7.pngegg.com/pngimages/627/693/png-clipart-computer-icons-user-user-icon-face-monochrome.png"
+                  width="25"
+                  height="auto"
+                />
+                <span class="txt_id">???</span>
+              </a>
+              님
+              <a href="#n" class="like_num txt_id">외 10명</a>
+              이 좋아합니다
+            </p>
+          </section>
+
+          <!-- feed txt -->
+          <section class="feed_txt">
+            <a href="#n" class="txt_id">User ID</a>
+            <span
+              >게시글 내용 게시글 내용 게시글 내용 게시글 내용<br />
+              게시글 내용 게시글 내용 게시글 내용 게시글 내용 게시글 내용 게시글
+              내용 게시글 내용</span
+            >
+            <a href="#n" class="more">더보기</a>
+          </section>
+          <!--comment-->
+          <div class="comments">
+            <div id="listComment" class="list_comment">
+              <p class="txt_comment">
+                <span>
+                  <a href="#n" class="txt_id">follow ID</a>
+                  <span>댓글 댓글 댓글 댓글</span>
+                </span>
+                <button id="delete" type="button">X</button>
+              </p>
+            </div>
+            <form id="post" class="post_comment">
+              <textarea
+                id="newComment"
+                type="in"
+                placeholder="댓글 달기..."
+              ></textarea>
+              <button id="btnPost" type="submit">게시</button>
+            </form>
+          </div>
+
+          <!-- FEED COMPONENT 2 -->
+          <!-- top -->
+          <div class="new_poster">
+            <a href="#n" class="poster_img">
+              <img
+                alt="follower profile image"
+                class="round_img"
+                src="https://e7.pngegg.com/pngimages/627/693/png-clipart-computer-icons-user-user-icon-face-monochrome.png"
+                width="25"
+                height="auto"
+              />
+            </a>
+            <a>
+              <a href="#n" class="poster_id txt_id">Following ID</a>
+              <button><i class="fas fa-ellipsis-h"></i>옵션 더보기</button>
+            </a>
+          </div>
+
+          <!-- content -->
+          <section class="feed_imgs">
+            <img
+              alt="햄스터 사진"
+              src="https://imgscience.ytn.co.kr/sciencetv/jpg/vod1459/2021/202112071802272615_h.jpg"
+              width="500"
+              height="330"
+            />
+            <div class="interactions">
+              <div class="my_emotion">
+                <button type="button"><i class="far fa-heart"></i>like</button>
+                <button type="button">
+                  <i class="far fa-comment"></i>write_comment
+                </button>
+                <button type="button"><i class="send_DM"></i>send_DM</button>
+              </div>
+              <div class="pagnation"></div>
+              <button type="button" class="bookmark">
+                <i class="far fa-bookmark"></i>bookmark
+              </button>
+            </div>
+            <p>
+              <a href="#n" class="like_user">
+                <img
+                  alt="like user image"
+                  class="round_img"
+                  src="https://e7.pngegg.com/pngimages/627/693/png-clipart-computer-icons-user-user-icon-face-monochrome.png"
+                  width="25"
+                  height="auto"
+                />
+                <span class="txt_id">???</span>
+              </a>
+              님
+              <a href="#n" class="like_num txt_id">외 10명</a>
+              이 좋아합니다
+            </p>
+          </section>
+
+          <!-- feed txt -->
+          <section class="feed_txt">
+            <a href="#n" class="txt_id">User ID</a>
+            <span
+              >게시글 내용 게시글 내용 게시글 내용 게시글 내용<br />
+              게시글 내용 게시글 내용 게시글 내용 게시글 내용 게시글 내용 게시글
+              내용 게시글 내용</span
+            >
+            <a href="#n" class="more">더보기</a>
+          </section>
+          <!--comment-->
+          <div class="comments">
+            <div id="listComment" class="list_comment">
+              <p class="txt_comment">
+                <span>
+                  <a href="#n" class="txt_id">follow ID</a>
+                  <span>댓글 댓글 댓글 댓글</span>
+                </span>
+                <button id="delete" type="button">X</button>
+              </p>
+            </div>
+            <form id="post" class="post_comment">
+              <textarea
+                id="newComment"
+                type="in"
+                placeholder="댓글 달기..."
+              ></textarea>
+              <button id="btnPost" type="submit">게시</button>
+            </form>
+          </div>
+
+          <!-- FEED COMPONENT 3 -->
+          <!-- top -->
+          <div class="new_poster">
+            <a href="#n" class="poster_img">
+              <img
+                alt="follower profile image"
+                class="round_img"
+                src="https://e7.pngegg.com/pngimages/627/693/png-clipart-computer-icons-user-user-icon-face-monochrome.png"
+                width="25"
+                height="auto"
+              />
+            </a>
+            <a>
+              <a href="#n" class="poster_id txt_id">Following ID</a>
+              <button><i class="fas fa-ellipsis-h"></i>옵션 더보기</button>
+            </a>
+          </div>
+          <!-- content -->
+          <section class="feed_imgs">
+            <img
+              alt="고양이 사진"
+              src="https://i.namu.wiki/i/dx-9cagv5A_h8x_QWEBDgYtlvI4skHgM-cIGKLE_RNxm7Aj8wj_pBeEJhIXG8CJUa-3dXzY6w6UOVya56wR8Vg.webp"
+              width="500"
+              height="330"
+            />
+            <div class="interactions">
+              <div class="my_emotion">
+                <button type="button"><i class="far fa-heart"></i>like</button>
+                <button type="button">
+                  <i class="far fa-comment"></i>write_comment
+                </button>
+                <button type="button"><i class="send_DM"></i>send_DM</button>
+              </div>
+              <div class="pagnation"></div>
+              <button type="button" class="bookmark">
+                <i class="far fa-bookmark"></i>bookmark
+              </button>
+            </div>
+            <p>
+              <a href="#n" class="like_user">
+                <img
+                  alt="like user image"
+                  class="round_img"
+                  src="https://e7.pngegg.com/pngimages/627/693/png-clipart-computer-icons-user-user-icon-face-monochrome.png"
+                  width="25"
+                  height="auto"
+                />
+                <span class="txt_id">???</span>
+              </a>
+              님
+              <a href="#n" class="like_num txt_id">외 10명</a>
+              이 좋아합니다
+            </p>
+          </section>
+
+          <!-- feed txt -->
+          <section class="feed_txt">
+            <a href="#n" class="txt_id">User ID</a>
+            <span
+              >게시글 내용 게시글 내용 게시글 내용 게시글 내용<br />
+              게시글 내용 게시글 내용 게시글 내용 게시글 내용 게시글 내용 게시글
+              내용 게시글 내용</span
+            >
+            <a href="#n" class="more">더보기</a>
+          </section>
+          <!--comment-->
+          <div class="comments">
+            <div id="listComment" class="list_comment">
+              <p class="txt_comment">
+                <span>
+                  <a href="#n" class="txt_id">follow ID</a>
+                  <span>댓글 댓글 댓글 댓글</span>
+                </span>
+                <button id="delete" type="button">X</button>
+              </p>
+            </div>
+            <form id="post" class="post_comment">
+              <textarea
+                id="newComment"
+                type="in"
+                placeholder="댓글 달기..."
+              ></textarea>
+              <button id="btnPost" type="submit">게시</button>
+            </form>
+          </div>
+
+          <!-- FEED COMPONENT 4  -->
+          <!-- top -->
+          <div class="new_poster">
+            <a href="#n" class="poster_img">
+              <img
+                alt="follower profile image"
+                class="round_img"
+                src="https://e7.pngegg.com/pngimages/627/693/png-clipart-computer-icons-user-user-icon-face-monochrome.png"
+                width="25"
+                height="auto"
+              />
+            </a>
+            <a>
+              <a href="#n" class="poster_id txt_id">Following ID</a>
+              <button><i class="fas fa-ellipsis-h"></i>옵션 더보기</button>
+            </a>
+          </div>
+          <!-- content -->
+          <section class="feed_imgs">
+            <img
+              alt="강아지 사진"
+              src="https://dalkompet.com/wp-content/uploads/2020/04/%EA%B0%95%EC%95%84%EC%A7%80-%EC%82%AC%ED%9A%8C%ED%99%94-%EC%8B%9C%EA%B8%B0.jpg"
+              width="500"
+              height="330"
+            />
+            <div class="interactions">
+              <div class="my_emotion">
+                <button type="button"><i class="far fa-heart"></i>like</button>
+                <button type="button">
+                  <i class="far fa-comment"></i>write_comment
+                </button>
+                <button type="button"><i class="send_DM"></i>send_DM</button>
+              </div>
+              <div class="pagnation"></div>
+              <button type="button" class="bookmark">
+                <i class="far fa-bookmark"></i>bookmark
+              </button>
+            </div>
+            <p>
+              <a href="#n" class="like_user">
+                <img
+                  alt="like user image"
+                  class="round_img"
+                  src="https://e7.pngegg.com/pngimages/627/693/png-clipart-computer-icons-user-user-icon-face-monochrome.png"
+                  width="25"
+                  height="auto"
+                />
+                <span class="txt_id">???</span>
+              </a>
+              님
+              <a href="#n" class="like_num txt_id">외 10명</a>
+              이 좋아합니다
+            </p>
+          </section>
+          <!-- feed txt -->
+          <section class="feed_txt">
+            <a href="#n" class="txt_id">User ID</a>
+            <span
+              >게시글 내용 게시글 내용 게시글 내용 게시글 내용<br />
+              게시글 내용 게시글 내용 게시글 내용 게시글 내용 게시글 내용 게시글
+              내용 게시글 내용</span
+            >
+            <a href="#n" class="more">더보기</a>
+          </section>
+
+          <!--comment-->
+          <div class="comments">
+            <div id="listComment" class="list_comment">
+              <p class="txt_comment">
+                <span>
+                  <a href="#n" class="txt_id">follow ID</a>
+                  <span>댓글 댓글 댓글 댓글</span>
+                </span>
+                <button id="delete" type="button">X</button>
+              </p>
+            </div>
+            <form id="post" class="post_comment">
+              <textarea
+                id="newComment"
+                type="in"
+                placeholder="댓글 달기..."
+              ></textarea>
+              <button id="btnPost" type="submit">게시</button>
+            </form>
+          </div>
+
+          <!-- FEED COMPONENT 5 -->
+          <!-- top -->
+          <div class="new_poster">
+            <a href="#n" class="poster_img">
+              <img
+                alt="follower profile_img"
+                class="round_img"
+                src="https://e7.pngegg.com/pngimages/627/693/png-clipart-computer-icons-user-user-icon-face-monochrome.png"
+                width="25"
+                height="auto"
+              />
+            </a>
+            <a>
+              <a href="#n" class="poster_id txt_id">Following ID</a>
+              <button><i class="fas fa-ellipsis-h"></i>옵션 더보기</button>
+            </a>
+          </div>
+
+          <!-- content -->
+          <section class="feed_imgs">
+            <img
+              alt="해달 사진"
+              src="https://f1.kina.or.kr/2020/11/jtqgmmu4i3.jpg"
+              width="500"
+              height="330"
+            />
+            <div class="interactions">
+              <div class="my_emotion">
+                <button type="button"><i class="far fa-heart"></i>like</button>
+                <button type="button">
+                  <i class="far fa-comment"></i>write_comment
+                </button>
+                <button type="button"><i class="send_DM"></i>send_DM</button>
+              </div>
+              <div class="pagnation"></div>
+              <button type="button" class="bookmark">
+                <i class="far fa-bookmark"></i>bookmark
+              </button>
+            </div>
+            <p>
+              <a href="#n" class="like_user">
+                <img
+                  alt="like user image"
+                  class="round_img"
+                  src="https://e7.pngegg.com/pngimages/627/693/png-clipart-computer-icons-user-user-icon-face-monochrome.png"
+                  width="25"
+                  height="auto"
+                />
+                <span class="txt_id">???</span>
+              </a>
+              님
+              <a href="#n" class="like_num txt_id">외 10명</a>
+              이 좋아합니다
+            </p>
+          </section>
+
+          <!-- feed txt -->
+          <section class="feed_txt">
+            <a href="#n" class="txt_id">User ID</a>
+            <span
+              >게시글 내용 게시글 내용 게시글 내용 게시글 내용<br />
+              게시글 내용 게시글 내용 세기글 내용 게시글 내용</span
+            >
+            <a href="#n" class="more">더보기</a>
+          </section>
+          <!--comment-->
+          <div class="comments">
+            <div id="listComment" class="list_comment">
+              <p class="txt_comment">
+                <span>
+                  <a href="#n" class="txt_id">follow ID</a>
+                  <span>댓글 댓글 댓글 댓글</span>
+                </span>
+                <button id="delete" type="button">X</button>
+              </p>
+            </div>
+            <form id="post" class="post_comment">
+              <textarea
+                id="newComment"
+                type="in"
+                placeholder="댓글 달기..."
+              ></textarea>
+              <button id="btnPost" type="submit">게시</button>
+            </form>
+          </div>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>

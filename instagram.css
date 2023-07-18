@@ -1,0 +1,453 @@
+/**************************
+MAIN PAGE - COMMON
+**************************/
+.wrap {
+  width: 935px;
+  margin: 0 auto;
+}
+
+.round_img {
+  border-radius: 50%;
+}
+
+.txt_id {
+  font-weight: bold;
+}
+
+/**************************
+HEADER
+**************************/
+header {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+header .wrap {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 15px 0;
+}
+
+.search {
+  display: flex;
+  /* flex: n;의 의미
+     flex-frow: n;  ->flex-basis보다 늘어날 수 있는지 결정하는 속성
+     flex-shrink: n;  ->flex-shrink보다 줄어들 수 있는지 결정하는 속성
+     flex-basis: 0%;  ->flex item의 기본크기
+     를 줄여 표현한것 */
+  flex: 3.5;
+  padding: 0 5px;
+  margin: 0 15%;
+  background: #fafafa;
+  border: 1px solid #e8e8e8;
+  text-align: center;
+}
+
+.search input[type="text"] {
+  /* relative 값=요소를 자기 자신을 기준으로 배치?? 무슨뜻?? */
+  position: relative;
+  flex: 9;
+  height: 25px;
+  background: none;
+  border: none;
+}
+
+.search button {
+  flex: 1;
+  color: #999;
+}
+
+.gnb {
+  flex: 1.5;
+}
+
+.gnb ul {
+  display: flex;
+}
+
+.gnb ul li {
+  position: relative;
+  flex: 2.5;
+  font-size: 0;
+  width: 25px;
+  height: 25px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.gnb ul li:before {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  margin-left: -1.5px;
+  width: 4px;
+  height: 4px;
+  background: #e04141;
+  /* 보더 끝 둥글게 */
+  border-radius: 4px;
+}
+
+.gnb ul li.research {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png");
+}
+
+.gnb ul li.like {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png");
+}
+
+.gnb ul li.mypage {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png");
+}
+
+.gnb ul li.mypage:before {
+  display: none;
+}
+
+.gnb ul li a {
+  display: block;
+  height: 100%;
+}
+
+/**************************
+MAIN LAYOUT
+**************************/
+main.wrap {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 80px 0 100px;
+}
+
+/**************************
+ASIDE
+**************************/
+aside {
+  flex: 3.5;
+}
+
+/* my profile */
+.my_profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  margin-top: 13px;
+}
+
+.my_profile a.profile_img {
+  flex: 2;
+}
+
+.my_profile a.profile_img img {
+  width: 55px;
+  height: 55px;
+}
+
+.my_profile .my_id {
+  flex: 8;
+}
+
+.my_profile .my_id p {
+  color: #999;
+}
+
+/* WIDGET - common */
+.widget {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.widget_ttl {
+  display: flex;
+  /* 양쪽 끝을 붙인 상태에서 사이사이의 간격이 일정하게 */
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 0.8em;
+}
+
+.widget_ttl span {
+  color: #999;
+}
+
+.widget .txt_id:hover {
+  text-decoration: underline;
+}
+
+/* WIDGET - story */
+.stories {
+  padding-bottom: 0;
+}
+
+.list_story {
+  height: 200px;
+  /* y축으로 내용이 넘칠때 스크롤 */
+  overflow-y: scroll;
+}
+
+.list_story::-webkit-scrollbar {
+  width: 0;
+}
+
+.story {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.story a.follower_img {
+  flex: 2;
+}
+
+.story a.follower_img img {
+  width: 45px;
+  height: 45px;
+}
+
+.story .user_id {
+  flex: 8;
+}
+
+.story .user_id p {
+  color: #999;
+}
+
+/* WIDGET - recommend*/
+.recommends {
+  padding-bottom: 5px;
+}
+
+.recommend {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.recommend a.recommend_img {
+  flex: 2;
+}
+
+.recommend a.recommend_img img {
+  width: 45px;
+  height: 45px;
+}
+
+.recommend .user_id {
+  flex: 6;
+}
+
+.recommend .user_id p {
+  color: #999;
+}
+
+.recommend button {
+  flex: 2;
+  color: #0095f6;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+/* menu */
+.menu ul li {
+  position: relative;
+  display: inline-block;
+  line-height: 1.5;
+  padding-right: 12px;
+}
+.menu ul li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 7px;
+  width: 2px;
+  height: 2px;
+  margin-top: -1px;
+  background: #b9b9b9;
+}
+.menu ul li a {
+  color: #999;
+  font-size: 0.8em;
+}
+.copyright {
+  color: #999;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* FEED BOARD */
+div.feed_board {
+  flex: 6.5;
+  margin-right: 15px;
+}
+
+/* FEED-common */
+.feed {
+  background: #fff;
+  /* 보더 속성 정리하기 */
+  border: 1px solid #e8e8e8;
+}
+
+/* FEED-top */
+.new_poster {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.new_poster .poster_img {
+  flex: 1;
+}
+
+.new_poster .poster_img img {
+  width: 45px;
+  height: 45px;
+}
+
+.new_poster .poster_id {
+  flex: 18;
+  margin-left: 10px;
+}
+
+.new_poster button {
+  flex: 1;
+  font-size: 0;
+  text-align: right;
+}
+.new_poster button .fas {
+  flex: 0.4;
+  font-size: 12px;
+}
+
+/* feed-content */
+.feed_imgs img,
+.feed_imgs video {
+  width: 100%;
+}
+
+.interactions {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 0 10px;
+}
+
+.interactions button {
+  flex: 3;
+  margin: 0 10px;
+  font-size: 0;
+}
+
+.interactions button .bookmark {
+  flex: 1;
+}
+
+.interactions button .far {
+  font-size: 20px;
+  color: #676767;
+}
+
+.interactions .my_emotion {
+  display: flex;
+  flex: 2;
+}
+
+.pagnation {
+  flex: 25;
+}
+
+.like_user img {
+  width: 25px;
+  height: 25px;
+}
+
+.feed_imgs p {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.feed_imgs p .like_user {
+  display: flex;
+  align-items: center;
+}
+
+.feed_txt p .txt_id {
+  margin-left: 10px;
+}
+
+/* feed-feed text */
+.feed_txt {
+  padding: 0 20px;
+}
+
+.feed_txt .txt_id {
+  margin-right: 5px;
+}
+
+.feed_txt .more {
+  color: #999;
+}
+
+/*comments*/
+.comments {
+  padding: 10px 20px;
+}
+
+.list_comment {
+  margin-bottom: 10px;
+}
+
+.txt_comment {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.txt_comment > span {
+  flex: 9.8;
+}
+
+.txt_comment > span .txt_id {
+  margin-right: 10px;
+}
+
+.txt_comment > span span {
+  width: 100%;
+}
+
+.txt_comment button {
+  flex: 0.2;
+  color: #ddd;
+}
+
+.txt_comment button:hover {
+  color: #777;
+}
+
+.post_comment {
+  display: flex;
+  align-content: center;
+  padding: 20px 0 10px;
+  border-top: 1px solid #e8e8e8;
+}
+
+.post_comment textarea {
+  flex: 9;
+  height: 30px;
+  border: none;
+  resize: none;
+}
+
+/* 스크롤바 선언 */
+.post_comment textarea::-webkit-scrollbar {
+  width: 0;
+}
+
+.post_comment button {
+  flex: 1;
+  color: #0095f6;
+}
