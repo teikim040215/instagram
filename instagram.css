@@ -314,9 +314,9 @@ div.feed_board {
 }
 
 .new_poster button {
-  flex: 1;
-  font-size: 0;
-  text-align: right;
+  flex: auto;
+  font-size: 2;
+  text-align: center;
 }
 .new_poster button .fas {
   flex: 0.4;
@@ -333,13 +333,14 @@ div.feed_board {
   display: flex;
   align-items: center;
   height: 50px;
-  padding: 0 10px;
+  /* padding: 0 10px; */
 }
 
 .interactions button {
   flex: 3;
   margin: 0 10px;
-  font-size: 0;
+  font-size: 3;
+  align-items: center;
 }
 
 .interactions button .bookmark {
@@ -353,7 +354,7 @@ div.feed_board {
 
 .interactions .my_emotion {
   display: flex;
-  flex: 2;
+  flex: 3;
 }
 
 .pagnation {
